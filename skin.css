@@ -418,14 +418,24 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 }
 .wall__name{
   border-right:1px solid var(--hair); border-bottom:1px solid var(--hair);
-  padding:1.5rem 1.2rem; min-height:104px;
-  display:flex; align-items:center; justify-content:center; text-align:center;
-  font-family:var(--display); font-size:clamp(1.05rem,2vw,1.4rem); font-weight:500;
-  color:var(--ink-soft); letter-spacing:.01em;
-  transition:background .5s var(--ease), color .5s var(--ease);
+  padding:1.9rem 1.2rem; min-height:150px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1.05rem; text-align:center;
+  transition:background .5s var(--ease);
   background:var(--panel);
 }
-.wall__name:hover{ background:var(--panel-2); color:var(--ink); }
+.wall__name:hover{ background:var(--panel-2); }
+.wall__logowrap{ height:46px; display:flex; align-items:center; justify-content:center; }
+.wall__logo{
+  max-height:46px; max-width:172px; width:auto; height:auto; object-fit:contain;
+  opacity:.7; transition:opacity .45s var(--ease);
+}
+.wall__name:hover .wall__logo{ opacity:1; }
+.wall__cap{
+  font-family:var(--body); font-size:.62rem; font-weight:500;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--muted);
+  transition:color .45s var(--ease);
+}
+.wall__name:hover .wall__cap{ color:var(--ink-soft); }
 .wall__name .seq{
   display:block; font-family:var(--body); font-size:.56rem; letter-spacing:.2em;
   color:var(--gilt-dim); margin-bottom:.4rem;
@@ -674,6 +684,9 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
    ============================================================ */
 @media(max-width:640px){
   .topbar__cta{ padding:.5rem .8rem; font-size:.62rem; }
-  .wall__name{ min-height:84px; padding:1.1rem .8rem; }
+  .wall__name{ min-height:124px; padding:1.4rem .7rem; gap:.85rem; }
+  .wall__logowrap{ height:38px; }
+  .wall__logo{ max-height:38px; max-width:130px; }
+  .wall__cap{ font-size:.56rem; }
   .info__head{ max-width:none; }
 }
