@@ -1,0 +1,24 @@
+<svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bastion crenellated tower crest">
+  <!-- Traced from the real Bastion rook/tower mark: 4 merlons, arrow-slit arcade,
+       tapering shaft, stepped plinth. currentColor so it can be tinted bone or gilt. -->
+  <g fill="currentColor" fill-rule="evenodd">
+    <!-- crown: 4 merlons + corbel band -->
+    <path d="M28 6 h11 v8 h7 v-8 h11 v8 h7 v-8 h11 v8 h7 v-8 h0 v0 h-72 z" opacity="0"/>
+    <!-- merlons -->
+    <rect x="28" y="6"  width="10" height="13"/>
+    <rect x="45" y="6"  width="10" height="13"/>
+    <rect x="62" y="6"  width="10" height="13"/>
+    <!-- crown deck / corbel -->
+    <rect x="24" y="19" width="52" height="6"/>
+    <!-- arcade band (arrow-slit lancets read as notches in a solid band) -->
+    <path d="M26 25 h48 v13 h-48 z M31 38 v-7 a3 3 0 0 1 6 0 v7 z M44 38 v-7 a3 3 0 0 1 6 0 v7 z M57 38 v-7 a3 3 0 0 1 6 0 v7 z" fill-rule="evenodd"/>
+    <!-- cornice under arcade -->
+    <rect x="28" y="38" width="44" height="4"/>
+    <!-- tapering shaft -->
+    <path d="M33 42 h34 l4 54 h-42 z"/>
+    <!-- plinth steps -->
+    <rect x="26" y="96"  width="48" height="6"/>
+    <rect x="22" y="102" width="56" height="6"/>
+    <rect x="18" y="108" width="64" height="7"/>
+  </g>
+</svg>
