@@ -71,11 +71,10 @@
 <div class="scrollbar"><span id="scrollbar"></span></div>
 
 <!-- chapter rail -->
-<nav class="chapters" id="chapters" aria-label="Chapters">
-  <a href="#act-1"      class="chapters__dot" data-label="The Ledger"><span></span></a>
-  <a href="#act-2"      class="chapters__dot" data-label="The Skyline"><span></span></a>
-  <a href="#wall"       class="chapters__dot" data-label="Placements"><span></span></a>
-</nav>
+<div class="vslider" id="vslider" aria-hidden="true">
+  <span class="vslider__fill"></span>
+  <span class="vslider__thumb"></span>
+</div>
 
 <div class="cursor-glow" id="cursorGlow"></div>
 
@@ -97,7 +96,6 @@
         <h2 class="statement">What is forged endures.</h2>
       </div>
     </div>
-    <a href="#act-2" class="scroll-cue" aria-label="Scroll"><span></span>Scroll</a>
   </section>
 
   <div class="chapter-rule"><div class="embrasure" aria-hidden="true"></div></div>
@@ -119,7 +117,7 @@
     </div>
   </section>
 
-  <div class="chapter-rule"><div class="embrasure" aria-hidden="true"></div></div>
+  <div class="chapter-rule chapter-rule--fade"><div class="embrasure" aria-hidden="true"></div></div>
 
   <!-- ═══ PLACEMENT WALL ═══ -->
   <section class="info wall" id="wall">
@@ -238,5 +236,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
 <script src="engine.js"></script>
+<script>
+/* right-side scroll slider — fill + thumb track scroll progress */
+(function(){
+  var s=document.getElementById('vslider'); if(!s) return;
+  var fill=s.querySelector('.vslider__fill'), thumb=s.querySelector('.vslider__thumb');
+  function upd(){ var m=document.body.scrollHeight-window.innerHeight; var r=m>0?Math.min(1,Math.max(0,window.scrollY/m)):0; var p=(r*100)+'%'; fill.style.height=p; thumb.style.top=p; }
+  window.addEventListener('scroll',upd,{passive:true}); window.addEventListener('resize',upd); upd();
+})();
+</script>
 </body>
 </html>
