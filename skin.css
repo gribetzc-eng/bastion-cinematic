@@ -788,9 +788,5 @@ main:not(.page) > .footer .footer__meta a{ color:var(--gilt-dim); }
   box-shadow:0 0 10px var(--gilt-glow); transition:top .12s linear; }
 @media(max-width:1024px){ .vslider{ display:none; } }
 
-/* The divider before the white wall ombrés from the dark film into cream. */
-.chapter-rule--fade{
-  background:linear-gradient(180deg, var(--bg) 0%, var(--bg) 22%, var(--paper) 100%);
-  padding:clamp(4rem,9vw,7.5rem) 1.2rem;
-}
-.chapter-rule--fade .embrasure{ display:none; }
+/* The home page base is cream (the film chapters stay dark video). */
+body.home{ background:var(--paper); }
