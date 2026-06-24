@@ -477,17 +477,17 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 /* ---------------- CLOSING CTA CHAPTER (The Seal) ---------------- */
 .seal{
   position:relative;
-  min-height:88vh;
+  min-height:100vh;
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   text-align:center; padding:6rem 1.4rem;
   background:
-    radial-gradient(60% 50% at 50% 40%, rgba(203,142,51,.12), transparent 62%),
-    radial-gradient(120% 100% at 50% 50%, #141519 0%, var(--bg) 56%, var(--bg-deep) 100%);
+    radial-gradient(55% 42% at 50% 42%, rgba(203,142,51,.07), transparent 64%),
+    var(--bg-deep);                       /* plain near-black — the ending */
   overflow:hidden;
 }
 .seal__crest{
-  width:clamp(50px,8vw,78px); margin-bottom:1.5rem;
-  filter:drop-shadow(0 4px 26px rgba(203,142,51,.24));
+  width:clamp(96px,15vw,180px); margin-bottom:1.8rem;
+  filter:drop-shadow(0 8px 38px rgba(203,142,51,.24));
 }
 .seal__head{
   font-family:var(--display); font-weight:600;
