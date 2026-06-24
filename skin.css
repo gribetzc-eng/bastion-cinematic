@@ -790,3 +790,6 @@ main:not(.page) > .footer .footer__meta a{ color:var(--gilt-dim); }
 
 /* The home page base is cream (the film chapters stay dark video). */
 body.home{ background:var(--paper); }
+
+/* Hide the chapter index labels (01 · The Ledger, 02 · The Skyline). */
+.act__label{ display:none !important; }
