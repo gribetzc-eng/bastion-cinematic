@@ -8,7 +8,7 @@
    Type   : Cormorant Garamond (display, italic motto/eyebrows)
             + Inter (body, labels, UI)
    Color  : bg #0E0F10 / #08090A · panel #15171A · ink #ECE7DC
-            muted #8A8A82 · accent (gilt) #CB8E33 ONLY · hairline #2A2926
+            muted #8A8A82 · accent (gilt) #CAC8C0 ONLY · hairline #2A2926
    Device : embrasure rule (gilt hairline notched with crenellations)
             + gilt corner-bracket (both abstracted from the real logo's
             crenellated tower)
@@ -26,9 +26,9 @@
   --ink-soft:  #CFCABF;
   --muted:     #8A8A82;   /* lichen grey */
   --muted-2:   #6E6E67;
-  --gilt:      #CB8E33;   /* forge-gilt gold — the ONLY accent */
-  --gilt-dim:  #95672A;
-  --gilt-glow: rgba(203,142,51,.16);
+  --gilt:      #CAC8C0;   /* forge-gilt gold — the ONLY accent */
+  --gilt-dim:  #6F6D64;
+  --gilt-glow: rgba(202,200,192,.16);
   --hair:      #2A2926;   /* hairline */
   --hair-soft: #201F1D;
 
@@ -53,7 +53,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 
-::selection{ background:rgba(203,142,51,.26); color:var(--ink); }
+::selection{ background:rgba(202,200,192,.26); color:var(--ink); }
 
 /* ---------------- TYPE PRIMITIVES ---------------- */
 .serif{ font-family:var(--display); }
@@ -220,7 +220,7 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 
 /* ---------------- SCROLLBAR / CHAPTER RAIL ---------------- */
 .scrollbar span{ background:var(--gilt); }
-.chapters__dot span{ border-color:rgba(203,142,51,.4); }
+.chapters__dot span{ border-color:rgba(202,200,192,.4); }
 .chapters__dot.active span{ background:var(--gilt); border-color:var(--gilt); box-shadow:0 0 10px var(--gilt-glow); }
 /* Hide the page-name labels on the scroll rail — keep just the dots. */
 .chapters__dot::after{ content:none; display:none; }
@@ -270,7 +270,7 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 .poster--ex-igne::before, .poster--the-ledger::before{
   content:""; position:absolute; left:50%; top:46%;
   width:140px; height:140px; transform:translate(-50%,-50%);
-  background:radial-gradient(circle, rgba(203,142,51,.5), transparent 64%);
+  background:radial-gradient(circle, rgba(202,200,192,.5), transparent 64%);
   filter:blur(6px);
   animation:ember 9s ease-in-out infinite;
 }
@@ -353,7 +353,7 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   text-align:center;
   background:
-    radial-gradient(70% 55% at 50% 22%, rgba(203,142,51,.10), transparent 60%),
+    radial-gradient(70% 55% at 50% 22%, rgba(202,200,192,.10), transparent 60%),
     radial-gradient(120% 100% at 50% 40%, #141519 0%, var(--bg) 55%, var(--bg-deep) 100%);
   padding:7rem 1.4rem 5rem;
   overflow:hidden;
@@ -361,7 +361,7 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 .masthead__ember{   /* the single gold ember overhead */
   position:absolute; top:14%; left:50%; transform:translateX(-50%);
   width:min(56vw,520px); height:min(56vw,520px);
-  background:radial-gradient(circle, rgba(203,142,51,.16), transparent 60%);
+  background:radial-gradient(circle, rgba(202,200,192,.16), transparent 60%);
   pointer-events:none; filter:blur(2px);
   animation:breathe 7s ease-in-out infinite;
 }
@@ -369,7 +369,7 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 .masthead__crest{
   width:clamp(56px,9vw,92px); height:auto; margin-bottom:1.6rem;
   position:relative; z-index:1;
-  filter:drop-shadow(0 4px 30px rgba(203,142,51,.22));
+  filter:drop-shadow(0 4px 30px rgba(202,200,192,.22));
 }
 .masthead__wordmark{
   position:relative; z-index:1;
@@ -498,13 +498,13 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   text-align:center; padding:6rem 1.4rem;
   background:
-    radial-gradient(55% 42% at 50% 42%, rgba(203,142,51,.07), transparent 64%),
+    radial-gradient(55% 42% at 50% 42%, rgba(202,200,192,.07), transparent 64%),
     var(--bg-deep);                       /* plain near-black — the ending */
   overflow:hidden;
 }
 .seal__crest{
   width:clamp(96px,15vw,180px); margin-bottom:1.8rem;
-  filter:drop-shadow(0 8px 38px rgba(203,142,51,.24));
+  filter:drop-shadow(0 8px 38px rgba(202,200,192,.24));
 }
 .seal__head{
   font-family:var(--display); font-weight:600;
@@ -528,14 +528,14 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 .mark__ember{                          /* one faint gilt ember behind the rook, for depth */
   position:absolute; top:50%; left:50%; transform:translate(-50%,-58%);
   width:min(60vw,560px); height:min(60vw,560px);
-  background:radial-gradient(circle, rgba(203,142,51,.10), transparent 62%);
+  background:radial-gradient(circle, rgba(202,200,192,.10), transparent 62%);
   pointer-events:none; filter:blur(3px);
   animation:breathe 7s ease-in-out infinite;
 }
 .mark__crest{
   position:relative; z-index:1;
   width:clamp(118px,18vw,216px); height:auto;
-  filter:drop-shadow(0 8px 40px rgba(203,142,51,.26));
+  filter:drop-shadow(0 8px 40px rgba(202,200,192,.26));
 }
 .mark__motto{
   position:relative; z-index:1; margin-top:2.1rem;
@@ -572,7 +572,7 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
   text-align:center;
 }
 .footer__crest{ width:38px; height:auto; margin:0 auto 1.1rem; display:block;
-  filter:drop-shadow(0 2px 14px rgba(203,142,51,.2)); }
+  filter:drop-shadow(0 2px 14px rgba(202,200,192,.2)); }
 .footer__logo{
   font-family:var(--display); font-weight:600; letter-spacing:.34em; text-indent:.34em;
   font-size:1.5rem; color:var(--ink); margin-bottom:.5rem;
@@ -620,7 +620,7 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
   padding:clamp(8rem,16vw,12rem) clamp(1.2rem,6vw,3rem) clamp(3rem,7vw,5rem);
   text-align:center;
   background:
-    radial-gradient(60% 50% at 50% 20%, rgba(203,142,51,.09), transparent 60%),
+    radial-gradient(60% 50% at 50% 20%, rgba(202,200,192,.09), transparent 60%),
     radial-gradient(120% 100% at 50% 30%, #141519 0%, var(--bg) 60%);
 }
 .phero__eyebrow, .phero .phero__eyebrow{
@@ -683,7 +683,7 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
   display:flex; align-items:center; justify-content:center;
   background:var(--panel);
 }
-.mono-tile__crest{ width:46%; height:auto; filter:drop-shadow(0 4px 22px rgba(203,142,51,.18)); }
+.mono-tile__crest{ width:46%; height:auto; filter:drop-shadow(0 4px 22px rgba(202,200,192,.18)); }
 
 /* ---- channel / correspondence card ---- */
 .channel{
@@ -793,3 +793,7 @@ body.home{ background:var(--paper); }
 
 /* Hide the chapter index labels (01 · The Ledger, 02 · The Skyline). */
 .act__label{ display:none !important; }
+
+/* On the cream home footer the light-chalk crest + embrasure need darkening to read. */
+main:not(.page) > .footer .footer__crest{ filter:brightness(.5) !important; }
+main:not(.page) > .footer .embrasure{ filter:brightness(.5); }
