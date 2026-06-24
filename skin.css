@@ -222,10 +222,8 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 .scrollbar span{ background:var(--gilt); }
 .chapters__dot span{ border-color:rgba(203,142,51,.4); }
 .chapters__dot.active span{ background:var(--gilt); border-color:var(--gilt); box-shadow:0 0 10px var(--gilt-glow); }
-.chapters__dot::after{
-  font-family:var(--body); font-size:.6rem; letter-spacing:.22em; text-transform:uppercase;
-  color:var(--ink); background:rgba(8,9,10,.8); padding:.28rem .55rem; border:1px solid var(--hair);
-}
+/* Hide the page-name labels on the scroll rail — keep just the dots. */
+.chapters__dot::after{ content:none; display:none; }
 
 /* ---------------- CURSOR GLOW (subtle gilt ember) ---------------- */
 .cursor-glow{
@@ -322,15 +320,16 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 /* hero second statement subtle */
 .cap .statement{ font-style:italic; font-weight:500; }
 
-/* The Ledger (first page) runs bright brass footage — the gilt caption text
-   washes out over the gold, so brighten it to bone and deepen the scrim. */
-#act-1 .act__scrim{
+/* Film captions sit over footage — keep them bone with strong shadows so they
+   read clearly over any frame (the gilt washed out over bright footage). */
+.act .cap .eyebrow{ color:var(--ink); text-shadow:0 1px 3px rgba(0,0,0,.96), 0 2px 26px rgba(0,0,0,.9); }
+.act .cap .cap__sub{ color:var(--ink); text-shadow:0 1px 3px rgba(0,0,0,.94), 0 2px 24px rgba(0,0,0,.88); }
+.act .cap .gloss{ color:var(--ink-soft); }
+.act .cap .bignum, .act .cap .statement{ color:var(--ink); text-shadow:0 2px 8px rgba(0,0,0,.95), 0 4px 48px rgba(0,0,0,.88); }
+/* Deepen the scrim on both chapters so the type holds over bright frames. */
+.act .act__scrim{
   background:linear-gradient(180deg, rgba(8,9,10,.55), rgba(8,9,10,.24) 40%, rgba(8,9,10,.72));
 }
-#act-1 .cap .eyebrow{ color:var(--ink); text-shadow:0 1px 3px rgba(0,0,0,.96), 0 2px 26px rgba(0,0,0,.9); }
-#act-1 .cap .cap__sub{ color:var(--ink); text-shadow:0 1px 3px rgba(0,0,0,.94), 0 2px 24px rgba(0,0,0,.88); }
-#act-1 .cap .gloss{ color:var(--ink-soft); }
-#act-1 .cap .bignum{ color:var(--ink); text-shadow:0 2px 8px rgba(0,0,0,.95), 0 4px 48px rgba(0,0,0,.88); }
 
 .scroll-cue{ color:var(--gilt); }
 .scroll-cue{
