@@ -741,3 +741,35 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
   .wall__cap{ font-size:.56rem; }
   .info__head{ max-width:none; }
 }
+
+/* ============================================================
+   LIGHT SECTIONS (home) — the Placement Wall + footer go white, like the
+   original bastion.nyc. The film chapters + content pages stay dark.
+   ============================================================ */
+:root{ --paper:#F8F6F1; --paper-line:#E5E2DB; --ink-dk:#17181C; --muted-dk:#7A786F; }
+
+/* Placement Wall → white, logos darkened to read on it */
+#wall{ background:var(--paper) !important; }
+#wall .eyebrow.gilt{ color:var(--gilt-dim); }
+#wall .info__head{ color:var(--ink-dk); }
+#wall .wall__grid{ border-top-color:var(--paper-line); border-left-color:var(--paper-line); }
+#wall .wall__name{ background:#FCFBF7; border-right-color:var(--paper-line); border-bottom-color:var(--paper-line); }
+#wall .wall__name:hover{ background:#FFFFFF; }
+#wall .wall__logo{ filter:brightness(0); opacity:.8; }
+#wall .wall__name:hover .wall__logo{ opacity:1; }
+#wall .wall__cap{ color:var(--muted-dk); }
+#wall .wall__name:hover .wall__cap{ color:var(--ink-dk); }
+#wall .wall__disclaimer{ color:var(--muted-dk); }
+#wall .wall__attrib{ color:var(--gilt-dim); }
+
+/* Footer (home) → white */
+main:not(.page) > .footer{ background:var(--paper) !important; border-top:1px solid var(--paper-line); }
+main:not(.page) > .footer .footer__logo img{ filter:brightness(0); opacity:.92; }
+main:not(.page) > .footer .footer__motto{ color:var(--gilt-dim); }
+main:not(.page) > .footer .footer__place{ color:var(--muted-dk); }
+main:not(.page) > .footer .footer__meta,
+main:not(.page) > .footer .footer__fine{ color:var(--muted-dk); }
+main:not(.page) > .footer .footer__meta a{ color:var(--gilt-dim); }
+
+/* The big "Bastion" on the first page, set like the logo wordmark. */
+#act-1 .cap .bignum{ text-transform:uppercase; letter-spacing:.1em; }
