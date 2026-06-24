@@ -330,6 +330,14 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 .act .act__scrim{
   background:linear-gradient(180deg, rgba(8,9,10,.55), rgba(8,9,10,.24) 40%, rgba(8,9,10,.72));
 }
+/* sub-sub caption line (the motto under the tagline) */
+.cap .cap__motto{
+  margin-top:1rem;
+  font-family:var(--display); font-style:italic;
+  font-size:clamp(1rem,2.2vw,1.45rem);
+  color:var(--ink-soft); letter-spacing:.04em;
+  text-shadow:0 1px 3px rgba(0,0,0,.92), 0 2px 22px rgba(0,0,0,.85);
+}
 
 .scroll-cue{ color:var(--gilt); }
 .scroll-cue{
