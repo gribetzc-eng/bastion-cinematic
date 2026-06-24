@@ -207,11 +207,11 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 .topbar__cta{
   font-family:var(--body); font-size:.7rem; font-weight:600;
   letter-spacing:.2em; text-transform:uppercase;
-  color:var(--bg-deep); background:var(--gilt);
+  color:var(--bg-deep); background:#CAC8C0;
   padding:.62rem 1.05rem; border-radius:1px;
   transition:background .35s var(--ease), color .35s var(--ease), transform .35s var(--ease);
 }
-.topbar__cta:hover{ background:var(--ink); color:var(--bg-deep); transform:translateY(-1px); }
+.topbar__cta:hover{ background:#D8D6CE; color:var(--bg-deep); transform:translateY(-1px); }
 
 @media(max-width:860px){
   .topbar__nav{ display:none; }
