@@ -8,7 +8,7 @@
    Type   : Cormorant Garamond (display, italic motto/eyebrows)
             + Inter (body, labels, UI)
    Color  : bg #0E0F10 / #08090A · panel #15171A · ink #ECE7DC
-            muted #8A8A82 · accent (gilt) #CAC8C0 ONLY · hairline #2A2926
+            muted #8A8A82 · accent (gilt) #8F8D84 ONLY · hairline #2A2926
    Device : embrasure rule (gilt hairline notched with crenellations)
             + gilt corner-bracket (both abstracted from the real logo's
             crenellated tower)
@@ -26,7 +26,7 @@
   --ink-soft:  #CFCABF;
   --muted:     #8A8A82;   /* lichen grey */
   --muted-2:   #6E6E67;
-  --gilt:      #CAC8C0;   /* forge-gilt gold — the ONLY accent */
+  --gilt:      #8F8D84;   /* forge-gilt gold — the ONLY accent */
   --gilt-dim:  #6F6D64;
   --gilt-glow: rgba(202,200,192,.16);
   --hair:      #2A2926;   /* hairline */
@@ -207,11 +207,11 @@ h1,h2,h3{ font-family:var(--display); font-weight:600; line-height:1.04; letter-
 .topbar__cta{
   font-family:var(--body); font-size:.7rem; font-weight:600;
   letter-spacing:.2em; text-transform:uppercase;
-  color:var(--bg-deep); background:#CAC8C0;
+  color:var(--bg-deep); background:#8F8D84;
   padding:.62rem 1.05rem; border-radius:1px;
   transition:background .35s var(--ease), color .35s var(--ease), transform .35s var(--ease);
 }
-.topbar__cta:hover{ background:#D8D6CE; color:var(--bg-deep); transform:translateY(-1px); }
+.topbar__cta:hover{ background:#A6A49B; color:var(--bg-deep); transform:translateY(-1px); }
 
 @media(max-width:860px){
   .topbar__nav{ display:none; }
