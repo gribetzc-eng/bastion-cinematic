@@ -73,7 +73,8 @@
 <!-- chapter rail -->
 <nav class="chapters" id="chapters" aria-label="Chapters">
   <a href="#masthead"   class="chapters__dot" data-label="Bastion"><span></span></a>
-  <a href="#act-1"      class="chapters__dot" data-label="The Skyline"><span></span></a>
+  <a href="#act-1"      class="chapters__dot" data-label="The Ledger"><span></span></a>
+  <a href="#act-2"      class="chapters__dot" data-label="The Skyline"><span></span></a>
   <a href="#mark"       class="chapters__dot" data-label="The Mark"><span></span></a>
   <a href="#wall"       class="chapters__dot" data-label="Placements"><span></span></a>
   <a href="#seal"       class="chapters__dot" data-label="The Seal"><span></span></a>
@@ -96,13 +97,32 @@
     <a href="#act-1" class="masthead__cue" aria-label="Scroll">Enter<span></span></a>
   </section>
 
-  <!-- ═══ FILM CHAPTER 1 — THE SKYLINE ═══ -->
-  <section class="act" id="act-1" data-act data-seq="the-skyline" data-count="144" style="--len:5">
+  <!-- ═══ FILM CHAPTER 1 — THE LEDGER (first video) ═══ -->
+  <section class="act" id="act-1" data-act data-seq="the-ledger" data-count="144" style="--len:5">
+    <div class="act__stage">
+      <div class="poster poster--the-ledger" aria-hidden="true"></div>
+      <canvas class="act__canvas" width="1920" height="804"></canvas>
+      <div class="act__scrim"></div>
+      <div class="act__label">01 · The Ledger</div>
+      <div class="cap cap--center" data-from="0.04" data-to="0.46">
+        <p class="eyebrow gilt">Struck in Brass</p>
+        <h2 class="bignum serif">What is forged endures.</h2>
+      </div>
+      <div class="cap cap--center" data-from="0.58" data-to="0.94">
+        <h2 class="statement serif">Bastion New York</h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-rule"><div class="embrasure" aria-hidden="true"></div></div>
+
+  <!-- ═══ FILM CHAPTER 2 — THE SKYLINE ═══ -->
+  <section class="act" id="act-2" data-act data-seq="the-skyline" data-count="144" style="--len:5">
     <div class="act__stage">
       <div class="poster poster--the-skyline" aria-hidden="true"></div>
       <canvas class="act__canvas" width="1920" height="804"></canvas>
       <div class="act__scrim"></div>
-      <div class="act__label">01 · The Skyline</div>
+      <div class="act__label">02 · The Skyline</div>
       <div class="cap cap--center" data-from="0.04" data-to="0.46">
         <p class="eyebrow gilt">The City</p>
         <h2 class="bignum serif">Tier One</h2>
@@ -120,7 +140,6 @@
     <div class="mark__ember" aria-hidden="true"></div>
     <img class="mark__crest" src="assets/crest-gilt.svg" alt="Bastion crest" />
     <p class="mark__motto serif">Ex Igne Arx</p>
-    <p class="mark__line">What is forged endures</p>
     <div class="embrasure" aria-hidden="true"></div>
   </section>
 
